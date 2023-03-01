@@ -154,7 +154,7 @@ footer {
 .icono {
     width: 40px
 }
-@media (max-width: 770px) {
+@media (max-width: 670px) {
     nav {
         width: 95vw;
     }
@@ -167,7 +167,6 @@ footer {
     }
     .info-datos, .exp-skills, .sobre-mi, .contacto {
         width: 95vw;
-        height: auto;
         margin-top: 2em;
     }
     .contenedor {
@@ -194,7 +193,7 @@ footer {
     }
     button {
         width: 88vw;
-        height: 40px;
+        height: 60px;
         margin: 2em 0 0 1em;
         
     }
@@ -218,7 +217,7 @@ footer {
         left: 0;
     }
     .boton-datos {
-        margin: 0 0 0 1em;
+        margin: 2em 0 0 1em;
     }
     .exp-skills {
         display: flex;
@@ -227,7 +226,7 @@ footer {
         height: 1000px;
     }
     .sobre-mi {
-        height: auto;
+        height: 1400px;
         text-align: left;
     }
     .text2 {
@@ -270,27 +269,11 @@ footer {
     h2 {
         padding: 0;
     }
-    .info-datos {
-        height: auto;
-        margin-top: 8em;
-    }
-    .ocultar-flex {
-        display: block;
-    }
-    .info, .info-exp {
-        margin-left: 1em;
-        text-align: left;
-        line-height: 3rem;
-    }
-    .ordenar {
-        position: relative;
-        left: 0;
-    }
     .exp-skills {
-        height: 100px;
+        height: 1300px;
     }
     .sobre-mi {
-        height: 2550px;
+        height: 3150px;
     }
     .text1 {
         width: 95vw;
