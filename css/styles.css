@@ -1,0 +1,298 @@
+:root {
+    --back-fondo: #37393A;
+    --fondo2: #1b263b;
+    --color-nav: #415a77;
+    --color: #778da9;
+    --tipografia: #e0e1dd;
+    font-family: 'Gloock', serif; /*400*/
+    font-family: 'Quicksand', sans-serif; /* 300, 700*/
+}
+*, ::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #0d1b2a;
+}
+nav {
+    background-color: var(--color-nav);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 1335px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+#lista {
+    list-style: none;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-lista {
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.nav-lista:hover {
+    background-color: var(--color);
+}
+.contenedor, .info-datos, .exp-skills, .sobre-mi, .contacto {
+    width: 1335px;
+    height: 570px;
+    border-radius: 0.5rem;
+    margin-top: 5em;
+}
+.info-datos, .exp-skills, .sobre-mi, .contacto {
+    background-color: white;
+    margin-top: 5em;
+}
+.contenedor {
+    background-color: var(--fondo2);
+    display: flex;
+    gap: 2em;
+}
+img {
+    width: 50%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+}
+p {
+    color: var(--tipografia);
+    font-size: 1rem;
+    margin-right: 5em;
+    line-height: 2rem;
+}
+button {
+    width: 400px;
+    height: 50px;
+    margin-top: 5em;
+    background-color: #778da9;
+    font-family: 'Gloock', serif;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+button:hover {
+    background-color: var(--tipografia);
+    color: black;
+    cursor: pointer;
+}
+.info-datos {
+    position: relative;
+    height: auto;
+}
+.ocultar {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+.ocultar-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.ordenar {
+    position: absolute;
+    top: 0;
+    left: 50em;
+}
+h2 {
+    margin-top: 0;
+    padding: 1em 0 0 1em;
+    font-size: 3rem;
+    background-color: var(--tipografia);
+    height: 120px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.info, .info-exp {
+    margin-left: 3em;
+    color: black;
+    font-family: 'Gloock', serif;
+    font-weight: 300;
+}
+span {
+    margin: 1em;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.info-sobre-mi {
+    color: black;
+    margin: 0 2em 0 3em;
+}
+.exp-skills {
+    display: flex;
+    gap: 1rem;
+}
+.text {
+    margin-top: 0;
+}
+.text1 {
+    width: 400px;
+}
+.boton-datos {
+    margin: 2em 0 2em 3em;
+}
+footer {
+    background-color: var(--color-nav);
+    margin-top: 2em;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icono {
+    width: 40px
+}
+@media (max-width: 770px) {
+    nav {
+        width: 95vw;
+    }
+    #lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 90px;
+        padding-left: 1em;
+    }
+    .info-datos, .exp-skills, .sobre-mi, .contacto {
+        width: 95vw;
+        height: auto;
+        margin-top: 2em;
+    }
+    .contenedor {
+        width: 95vw;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8em;
+    }
+    img {
+        width: 295px;
+        height: 442px;
+        margin: 2em 2em 0 2em;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1rem;
+        margin: 0 0.5em 0 0.5em;
+        text-align: center;
+    }
+    button {
+        width: 88vw;
+        height: 40px;
+        margin: 2em 0 0 1em;
+        
+    }
+    h2 {
+        padding: 0 0 0 1em;
+    }
+    .info-datos {
+        height: auto;
+        margin-top: 8em;
+    }
+    .ocultar-flex {
+        display: block;
+    }
+    .info, .info-exp {
+        margin-left: 1em;
+        text-align: left;
+        line-height: 3rem;
+    }
+    .ordenar {
+        position: relative;
+        left: 0;
+    }
+    .boton-datos {
+        margin: 0 0 0 1em;
+    }
+    .exp-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 1000px;
+    }
+    .sobre-mi {
+        height: auto;
+        text-align: left;
+    }
+    .text2 {
+        padding: 0;
+    }
+    .text1 {
+        width: 95vw;
+    }
+    .info-sobre-mi {
+       padding: 0 2em 0 2em;
+        text-align: left;
+    }
+    footer {
+        width: 95vw;
+        height: 30px;
+        display: flex;
+    }
+    .icono {
+        width: 20px;
+        height: 20px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 350px) {
+    nav {
+        width: 98vw;
+    }
+    .contenedor {
+        width: 98vw;
+        height: 860px;
+    }
+    img {
+        width: 285px;
+        margin: 1em 1em 0 1em ;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    h2 {
+        padding: 0;
+    }
+    .info-datos {
+        height: auto;
+        margin-top: 8em;
+    }
+    .ocultar-flex {
+        display: block;
+    }
+    .info, .info-exp {
+        margin-left: 1em;
+        text-align: left;
+        line-height: 3rem;
+    }
+    .ordenar {
+        position: relative;
+        left: 0;
+    }
+    .exp-skills {
+        height: 100px;
+    }
+    .sobre-mi {
+        height: 2550px;
+    }
+    .text1 {
+        width: 95vw;
+    }
+}
